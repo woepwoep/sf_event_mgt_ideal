@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-04-30T09:20:52Z" product-name="sf_event_mgt_ideal">
+		<header/>
+		<body>
+			<trans-unit id="tx_sf_event_mgt_ideal_domain_model_itx">
+				<source>sf_event_mgt_ideal - payment processing</source>
+			</trans-unit>
+			<trans-unit id="tx_sf_event_mgt_ideal_domain_model_itx.description">
+				<source>Payment extension for sf_event_mgt</source>
+			</trans-unit>
+			<trans-unit id="merchant_id.description">
+				<source>merchantId</source>
+			</trans-unit>
+			<trans-unit id="merchant_subid.description">
+				<source>merchantSubId</source>
+			</trans-unit>
+			<trans-unit id="merchant_returnurl.description">
+				<source>merchantReturnUrl</source>
+			</trans-unit>
+			<trans-unit id="issuer_id.description">
+				<source>issuerId</source>
+			</trans-unit>
+			<trans-unit id="amount.description">
+				<source>amount</source>
+			</trans-unit>
+			<trans-unit id="currency.description">
+				<source>currency</source>
+			</trans-unit>
+			<trans-unit id="expirationperiod.description">
+				<source>expirationperiod</source>
+			</trans-unit>
+			<trans-unit id="language.description">
+				<source>language</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="entrancecode.description">
+				<source>entrancecode</source>
+			</trans-unit>
+			<trans-unit id="purchase_id.description">
+				<source>purchaseId</source>
+			</trans-unit>
+			<trans-unit id="tx_id.description">
+				<source>txId</source>
+			</trans-unit>
+			<trans-unit id="acquirer_id.description">
+				<source>acquirerId</source>
+			</trans-unit>
+			<trans-unit id="tx_status.description">
+				<source>txStatus</source>
+			</trans-unit>
+			<trans-unit id="tx_status_timestamp.description">
+				<source>txStatusTimestamp</source>
+			</trans-unit>
+			<trans-unit id="tx_consumer_name.description">
+				<source>txConsumerName</source>
+			</trans-unit>
+			<trans-unit id="tx_consumer_iban.description">
+				<source>txConsumerIban</source>
+			</trans-unit>
+			<trans-unit id="tx_consumer_bic.description">
+				<source>txConsumerBic</source>
+			</trans-unit>
+			<trans-unit id="registration.description">
+				<source>registration</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

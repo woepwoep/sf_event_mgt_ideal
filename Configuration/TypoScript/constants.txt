@@ -1,0 +1,24 @@
+plugin.tx_sfeventmgtideal {
+	settings {
+		# cat=plugin.tx_sfeventmgtideal/file; type=string; label=Path to iDEAL configuration file
+		idealConfigurationFile = EXT:sf_event_mgt_ideal/Configuration/Ideal/config.conf
+		# cat=plugin.tx_sfeventmgtideal/links; type=string; label=iDEAL PID
+		idealPid = 
+		# cat=plugin.tx_sfeventmgtideal/file; type=string; label=Payment form with issuer selection and redirect to bank
+		paymentForm = AddForm.html
+		# cat=plugin.tx_sfeventmgtideal/links; type=string; label=Payment return PID
+		paymentReturnPid = 
+	}
+	view {
+		# cat=plugin.tx_sfeventmgtideal/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:sf_event_mgt_ideal/Resources/Private/Templates/
+		# cat=plugin.tx_sfeventmgtideal/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:sf_event_mgt_ideal/Resources/Private/Partials/
+		# cat=plugin.tx_sfeventmgtideal/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:sf_event_mgt_ideal/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_sfeventmgtideal//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

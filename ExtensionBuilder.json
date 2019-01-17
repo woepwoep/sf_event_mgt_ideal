@@ -1,0 +1,39 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Payment extension for sf_event_mgt",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "sf_event_mgt_ideal",
+        "name": "sf_event_mgt_ideal",
+        "originalExtensionKey": "sf_event_mgt_ideal",
+        "originalVendorName": "RedSeadog",
+        "persons": [
+            {
+                "company": "Red-Seadog",
+                "email": "woepwoep@gmail.com",
+                "name": "Ronald Wopereis",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "RedSeadog"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2017-04-17 11:27",
+        "extension_builder_version": "7.6.18",
+        "be_user": "Ronald Wopereis (1)"
+    }
+}

@@ -1,0 +1,269 @@
+<T3DataStructure>
+	<sheets>
+
+        <!-- Sheet: MERCHANT -->
+		<merchant>
+			<ROOT>
+				<TCEforms>
+                    <sheetTitle>LLL:EXT:sf_event_mgt_ideal/Resources/Private/Language/locallang_be.xlf:flexforms_tab.merchant</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+                    <!-- MERCHANTID -->
+					<settings.merchant.id>
+						<TCEforms>
+							<label>
+								MERCHANTID - Id van de webshop, door de acceptant te verkrijgen via het iDEAL Dashboard
+							</label>
+							<config>
+								<type>input</type>
+								<size>9</size>
+								<eval>int</eval>
+								<default></default>
+							</config>
+						</TCEforms>
+					</settings.merchant.id>
+
+                    <!-- MERCHANTSUBID -->
+					<settings.merchant.subid>
+						<TCEforms>
+							<label>
+								SUBID - Sub Id van de webshop, alleen te wijzigen na overleg met de acquirer
+							</label>
+							<config>
+								<type>input</type>
+								<size>1</size>
+								<eval>int</eval>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.merchant.subid>
+
+                    <!-- MERCHANTRETURNURL -->
+					<settings.merchant.returnurl>
+						<TCEforms>
+							<label>
+								MERCHANTRETURNURL - URL van de pagina in de webshop waarnaar de consument wordt geredirect na de iDEAL transactie
+							</label>
+							<config>
+								<type>input</type>
+								<size>80</size>
+							</config>
+						</TCEforms>
+					</settings.merchant.returnurl>
+				</el>
+            </ROOT>
+        </merchant>
+
+        <!-- Sheet: ACQUIRER -->
+        <acquirer>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:sf_event_mgt_ideal/Resources/Private/Language/locallang_be.xlf:flexforms_tab.acquirer</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+				<el>
+
+                    <!-- ACQUIRERURL -->
+					<settings.acquirer.url>
+						<TCEforms>
+							<label>
+								ACQUIRERURL - URL van de acquirer van de acceptant; niet wijzigen
+							</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="1" type="array">
+										<numIndex index="0">iDEAL test</numIndex>
+										<numIndex index="1">https://idealtest.secure-ing.com/ideal/iDEALv3</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">iDEAL prod</numIndex>
+										<numIndex index="1">https://ideal.secure-ing.com/ideal/iDEALv3</numIndex>
+									</numIndex>
+								</items>
+								<minitems>0</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</settings.acquirer.url>
+
+                    <!-- ACQUIRERTIMEOUT -->
+					<settings.acquirer.timeout>
+						<TCEforms>
+							<label>
+								ACQUIRERTIMEOUT - Connection timeout in seconds
+							</label>
+							<config>
+								<type>input</type>
+								<eval>int</eval>
+								<size>2</size>
+								<default>10</default>
+							</config>
+						</TCEforms>
+					</settings.acquirer.timeout>
+
+                    <!-- EXPIRATIONPERIOD -->
+					<settings.acquirer.expirationperiod>
+						<TCEforms>
+							<label>
+								EXPIRATIONPERIOD - Vervaltijd per transactie; zie paragraaf 3.3.1 van het document
+							</label>
+							<config>
+								<type>input</type>
+								<size>4</size>
+								<default>PT1H</default>
+							</config>
+						</TCEforms>
+					</settings.acquirer.expirationperiod>
+				</el>
+            </ROOT>
+        </acquirer>
+
+        <!-- Sheet: CRYPTO -->
+        <crypto>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:sf_event_mgt_ideal/Resources/Private/Language/locallang_be.xlf:flexforms_tab.crypto</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+				<el>
+
+                    <!-- PRIVATEKEY -->
+					<settings.crypto.privatekey>
+						<TCEforms>
+							<label>
+								PRIVATEKEY - Note: file must be available on the config path!
+							</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+							</config>
+						</TCEforms>
+					</settings.crypto.privatekey>
+
+                    <!-- PRIVATEKEYPASS -->
+					<settings.crypto.privatekeypass>
+						<TCEforms>
+							<label>
+								PRIVATEKEYPASS - Vul hier het wachtwoord van uw private key in
+							</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+							</config>
+						</TCEforms>
+					</settings.crypto.privatekeypass>
+
+                    <!-- PRIVATECERT -->
+					<settings.crypto.privatecert>
+						<TCEforms>
+							<label>
+								PRIVATECERT - The filename of the certificate created by the merchant
+							</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+							</config>
+						</TCEforms>
+					</settings.crypto.privatecert>
+
+                    <!-- CERTIFICATE0 -->
+					<settings.crypto.certificate0>
+						<TCEforms>
+							<label>
+								CERTIFICATE0 - The filename of the certificate created by the acquirer
+							</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+							</config>
+						</TCEforms>
+					</settings.crypto.certificate0>
+				</el>
+            </ROOT>
+        </crypto>
+
+        <!-- Sheet: CONNECTION -->
+        <connection>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:sf_event_mgt_ideal/Resources/Private/Language/locallang_be.xlf:flexforms_tab.connection</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+				<el>
+
+                    <!-- PROXy -->
+					<settings.connection.proxy>
+						<TCEforms>
+							<label>
+								PROXY - Vul hier een proxyserver in (gebruik dit ALLEEN als de webshop achter een proxyserver zit)
+							</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<default></default>
+							</config>
+						</TCEforms>
+					</settings.connection.proxy>
+
+                    <!-- PROXyACQURL -->
+					<settings.connection.proxyacqurl>
+						<TCEforms>
+							<label>
+								PROXYACQURL - vul hier de url van de acquirer in (gebruik dit ALLEEN als de webshop achter een proxyserver zit)
+							</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<default></default>
+							</config>
+						</TCEforms>
+					</settings.connection.proxyacqurl>
+				</el>
+            </ROOT>
+        </connection>
+
+        <!-- Sheet: LOGGING -->
+        <logging>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:sf_event_mgt_ideal/Resources/Private/Language/locallang_be.xlf:flexforms_tab.logging</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+				<el>
+
+                    <!-- LOGFILE -->
+					<settings.logging.logfile>
+						<TCEforms>
+							<label>
+								LOGFILE - The log filename where debugging info to be recorded (e.g. connector.log).
+							</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<default>iDEAL.log</default>
+							</config>
+						</TCEforms>
+					</settings.logging.logfile>
+
+                    <!-- TRACELEVEL -->
+					<settings.logging.tracelevel>
+						<TCEforms>
+							<label>
+								TRACELEVEL - TRACELEVEL=DEBUG,ERROR (gebruik dit ALLEEN tijdens het testen, om misbruik te voorkomen)
+							</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<default></default>
+							</config>
+						</TCEforms>
+					</settings.logging.tracelevel>
+				</el>
+			</ROOT>
+        </logging>
+
+	</sheets>
+</T3DataStructure>

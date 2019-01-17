@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-04-30T09:20:52Z" product-name="sf_event_mgt_ideal">
+		<header/>
+		<body>
+			<trans-unit id="tx_sf_event_mgt_ideal_domain_model_itx">
+				<source>sf_event_mgt_ideal - payment processing</source>
+			</trans-unit>
+			<trans-unit id="tx_sf_event_mgt_ideal_domain_model_itx.description">
+				<source>Payment extension for sf_event_mgt</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction">
+				<source>Ideal Transaction</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.merchant_id">
+				<source>Merchant Id</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.issuer_id">
+				<source>Issuer Id</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.amount">
+				<source>Amount</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.currency">
+				<source>Currency</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.expirationperiod">
+				<source>Expiration Period</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.language">
+				<source>Language</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.entrancecode">
+				<source>Entrancecode</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.purchase_id">
+				<source>Purchase Id</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.tx_id">
+				<source>Tx Id</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.acquirer_id">
+				<source>Acquirer Id</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.tx_status">
+				<source>Tx Status</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.tx_status_timestamp">
+				<source>Tx Status Timestamp</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.tx_consumer_name">
+				<source>Tx Consumer Name</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.tx_consumer_iban">
+				<source>Tx Consumer Iban</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.tx_consumer_bic">
+				<source>Tx Consumer Bic</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_idealtransaction.registration">
+				<source>Registration</source>
+			</trans-unit>
+			<trans-unit id="tx_sfeventmgtideal_domain_model_registration">
+				<source>Registration</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-17T12:48:01Z"
+		  product-name="sf_event_mgt_ideal">
+		<header/>
+		<body>
+			<trans-unit id="extmng.enableIdeal">
+				<source>Enable payment method 'iDEAL'</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.merchant">
+				<source>MERCHANT</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.acquirer">
+				<source>ACQUIRER</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.crypto">
+				<source>CRYPTO</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.connection">
+				<source>CONNECTION</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.logging">
+				<source>LOGGING</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.proxy">
+				<source>PROXY</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

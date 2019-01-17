@@ -1,0 +1,29 @@
+<div id="bank">	
+    <div id="lijst">
+		<f:form object="{idealTransaction}" name="idealTransaction" extensionName="sfeventmgtideal" pluginName="itx" controller="IdealTransaction" action="add" pageUid="{settings.idealPid}" additionalAttributes="{role:'form'}" >
+			<h4>Kies uw bank:</h4>
+            <div id="ideal-logo">
+				<f:image src="EXT:sf_event_mgt_ideal/Resources/Public/Icons/ideal.png" width="35" />
+    		</div>
+			<div class="form-group">	
+				<f:for each="{directoryResponse.countries}" as="country">
+					<f:form.select property="issuerId" options="{country.issuers}" optionLabelField="name" optionValueField="id" class="form-control" />
+				</f:for>
+			</div>
+    
+			<f:form.hidden property="merchantId" />
+			<f:form.hidden property="merchantSubId" />
+			<f:form.hidden property="merchantReturnUrl" />
+			<f:form.hidden property="purchaseId" />
+			<f:form.hidden property="amount" />
+			<f:form.hidden property="currency" />
+			<f:form.hidden property="expirationPeriod" />
+			<f:form.hidden property="language" />
+			<f:form.hidden property="description" />
+			<f:form.hidden property="entrancecode" />
+			<f:form.hidden property="registration" />
+	
+			<f:form.submit value="Betaal!" class="btn btn-primary" />
+		</f:form>
+    </div>
+</div>

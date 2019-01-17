@@ -1,0 +1,25 @@
+plugin.tx_sfeventmgtideal {
+	settings {
+		idealConfigurationFile = {$plugin.tx_sfeventmgtideal.settings.idealConfigurationFile}
+		idealPid = {$plugin.tx_sfeventmgtideal.settings.idealPid}
+		paymentForm = {$plugin.tx_sfeventmgtideal.settings.paymentForm}
+		paymentReturnPid = {$plugin.tx_sfeventmgtideal.settings.paymentReturnPid}
+	}
+	view {
+		templateRootPaths {
+			0 = EXT:sf_event_mgt_ideal/Resources/Private/Templates/
+			1 = {$plugin.tx_sfeventmgtideal.view.templateRootPath}
+		}
+		partialRootPaths {
+			0 = EXT:sf_event_mgt_ideal/Resources/Private/Partials/
+			1 = {$plugin.tx_sfeventmgtideal.view.partialRootPath}
+		}
+		layoutRootPaths {
+			0 = EXT:sf_event_mgt_ideal/Resources/Private/Layouts/
+			1 = {$plugin.tx_sfeventmgtideal.view.layoutRootPath}
+		}
+	}
+	persistence {
+		storagePid = {$plugin.tx_sfeventmgtideal.persistence.storagePid}
+	}
+}
